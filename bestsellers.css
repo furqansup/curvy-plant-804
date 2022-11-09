@@ -1,0 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#left {
+    display: inline-block;
+    max-width: 25vw;
+    height: 100vh;
+    border: 1px solid black;
+}
+#container {
+    display: inline-block;
+    max-width: 75vw;
+    height: auto;
+    border: 1px solid black;
+    float: right;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows:  repeat(1,1fr);
+    gap : .2rem;
+}
+img {
+    
+    width: 100%;
+    height: auto;
+}
+.prod_div {
+    width: 90%;
+    height: auto;
+    text-align: center;
+    padding: .5rem;
+    margin: 1rem;
+}
