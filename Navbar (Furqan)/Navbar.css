@@ -5,19 +5,88 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 #f-right{
     display: flex;
     justify-content: space-around;
     width: 13%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
-#f-account{
-    
+#f-account {
+    display: flex;
+    align-items: center;
+}
+#f-account img{
+    width: 17px;
+    height: 17px;
+    margin-right: 10px;
+    margin-bottom: 6px;
+}
+#f-cart{
+    display: flex;
+    align-items: center;
+}
+#f-cart img{
+    width: 20px;
+    height: 20px;
+    margin-right: 6px;
+    margin-bottom: 6px;
 }
 #bottom{
+    margin: auto;
     display: flex;
+    width: 86%;
     justify-content: space-evenly;
-    /* font-family: 'Times New Roman', Times, serif; */
+    cursor: pointer;
+}
+#bottom div{
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+#bottom div:hover{
+    background-color: rgb(255, 246, 246);
+    transition: 500ms;
+}
+#f-search {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    border: 1px solid gray;
+}
+#f-search img{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+#f-search input{
+    width: 100%;
+    border: 0px;
+    padding: 10px;
+    outline: none;
+}
+#f-search input[type=button] {
+    border: none;
+    color: white;
+    border: none;
+    outline: none;
+    display: block;
+} 
+#f-search input ::placeholder{
+    color: red;
+}
+#bottom div ul li{
+    display: inline-block;
+}
+#bottom div ul li a{
+    text-decoration: none;
+    color: black;
+    opacity: 0;
+    visibility: hidden;
+}
+#bottom div ul li :hover a{
+    opacity: 1;
+    visibility: visible;
 }
