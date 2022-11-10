@@ -145,7 +145,7 @@ hr{
     height: 40px;
     width: 90%;
     margin-top: 30px;
-    border: 1px solid red;
+    border: 0px solid red;
     cursor: pointer;
    }
    .checkbox1:hover{
@@ -156,12 +156,19 @@ hr{
        height: 30px;
        vertical-align: middle;
    }
-   /* .checkboxlebel{
+   
+   .checkboxlebel{
     position: relative;
     margin: 20px;
-    margin-bottom: 20px;
+    font-size: 16px;
    }
-   */
+   .checkboxlebel a{
+    color: black;
+   }
+   .checkboxlebel a:hover{
+    text-decoration: none;
+   }
+  
    #button1{
     margin-top: 40px;
     width: 100%;
