@@ -8,12 +8,29 @@
     <title>Dermicare</title>
 </head>
 <body>
-    <div id="left">
-        
+    <div class="left">
+        <p>left div</p>
     </div>
 
-    <h3>Dermicare bestsellers</h3>
-    <div id="container"></div>
+    
+    
+    <div class="right">
+        <div>
+            <h3>Dermicare bestsellers</h3>
+            <p>436 results</p>
+            <span>Sort by</span>
+            <select name="" id="sort" onchange="sort()">
+                <option value="default">default</option>
+                <option value="Bestsellers">Bestsellers</option>
+                <option value="low">Price Low to high</option>
+                <option value="high">Price High to low</option>
+                <option value="letter">A-Z</option>
+                <option value="Bestsellers">Percentage discount</option>
+                <option value="Bestsellers">Newest Arrivals</option>
+            </select>
+        </div>
+        <div id="container"></div>
+    </div>
     
     
     <script src="./bestsellers.js"></script>
