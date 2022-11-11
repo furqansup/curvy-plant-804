@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dermicare</title>
+    <link rel="stylesheet" href="./bestsellers.css">
+</head>
+<body>
+
+    <!-- left part -->
+    <div class="left">
+        <p>left div</p>
+    </div>
+
+    <!-- right part -->
+    <div class="right">
+        <div>
+            <h3>Sort by</h3>
+            <p>436 results</p>
+            <select name="" id="sort" onchange="sort()">
+                <option value="default">default</option>
+                <option value="low">Price: Low to high</option>
+                <option value="high">Price: High to low</option>
+                <option value="bestsellers">Bestsellers</option>
+                <option value="letter">A-Z</option>
+            </select>
+        </div>
+        <div id="container"></div>
+    </div>
+
+    <script src="./bestsellers.js"></script>
+</body>
+</html>
