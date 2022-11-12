@@ -22,6 +22,12 @@ body {
 #f-account {
   display: flex;
   align-items: center;
+  padding: 5px;
+}
+#f-account:hover{
+  background-color: rgb(255, 246, 246);
+  transition: 500ms;
+  cursor: pointer;
 }
 #f-account img {
   width: 17px;
@@ -32,6 +38,12 @@ body {
 #f-cart {
   display: flex;
   align-items: center;
+  padding: 5px;
+}
+#f-cart:hover{
+  background-color: rgb(255, 246, 246);
+  transition: 500ms;
+  cursor: pointer;
 }
 #f-cart img {
   width: 20px;
@@ -52,8 +64,12 @@ body {
   padding-left: 25px;
   padding-right: 25px;
   font-size: 15px;
+  font-family:Arial, sans-serif
 }
-
+.skin{
+  text-decoration: none;
+  color: black;
+}
 #bottom div:hover {
   background-color: rgb(255, 246, 246);
   transition: 500ms;
@@ -84,19 +100,6 @@ body {
 }
 #f-search input ::placeholder {
   color: red;
-}
-#bottom div ul li {
-  display: inline-block;
-}
-#bottom div ul li a {
-  text-decoration: none;
-  color: black;
-  opacity: 0;
-  visibility: hidden;
-}
-#bottom div ul li :hover a {
-  opacity: 1;
-  visibility: visible;
 }
 #mini-top {
   margin: auto;
@@ -181,4 +184,48 @@ body {
   width: 20px;
   height: 20px;
   margin-right: 5px;
+}
+
+/* drop down */
+
+#bottom div ul li{
+  position: relative;
+  list-style: none;
+  display: inline-block;
+}
+#bottom div ul li a{
+  display: block;
+  color: black;
+  text-decoration: none;
+}
+#bottom div ul{
+  position: absolute;
+  display: none;
+}
+#bottom div :hover>ul {
+  display: block;
+}
+
+/* bottom navbar */
+#bottom-navbar{
+  border-top: 1px solid #dbcdcd;
+  display: flex;
+  justify-content: center;
+  background-color: #f2f2f2;
+}
+#bottom-navbar div{
+  /* border: 1px solid; */
+  margin-right: 60px;
+  display: flex;
+  align-items: center;
+}
+#bottom-navbar div:hover{
+  cursor: pointer;
+  text-decoration: underline;
+  color: rgb(52, 51, 51);
+}
+#bottom-navbar div img{
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
 }
