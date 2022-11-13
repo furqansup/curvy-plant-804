@@ -69,7 +69,7 @@ function signup(){
     }
    
      if(user==="" || email=="" || password==""){
-        alert("please fill the required field")
+        alert("Please fill all the required fields")
      }
 
 
@@ -112,7 +112,7 @@ function signup(){
             } 
         
         } else{
-            alert("please fill the required field")
+            alert("Please fill all the required fields")
         }
        
 }
