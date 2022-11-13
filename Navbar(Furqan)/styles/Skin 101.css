@@ -28,6 +28,14 @@ body {
     text-decoration: none;
     color: black;
   }
+  .best {
+    text-decoration: none;
+    color: black;
+    padding-bottom: 10px;
+  }
+  .best-div {
+    height: 30px;
+  }
   #f-account:hover{
     background-color: rgb(255, 246, 246);
     transition: 500ms;

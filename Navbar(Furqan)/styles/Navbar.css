@@ -4,6 +4,7 @@ body {
 }
 #navbar {
   border-bottom: 1px solid #cccccc;
+  overflow: hidden;
 }
 #top {
   margin: auto;
@@ -23,11 +24,19 @@ body {
   align-items: center;
   padding: 5px;
 }
-.acc-anchor{
+.acc-anchor {
   text-decoration: none;
   color: black;
 }
-#f-account:hover{
+.best {
+  text-decoration: none;
+  color: black;
+  padding-bottom: 10px;
+}
+.best-div {
+  height: 30px;
+}
+#f-account:hover {
   background-color: rgb(255, 246, 246);
   transition: 500ms;
   cursor: pointer;
@@ -43,7 +52,7 @@ body {
   align-items: center;
   padding: 5px;
 }
-#f-cart:hover{
+#f-cart:hover {
   background-color: rgb(255, 246, 246);
   transition: 500ms;
   cursor: pointer;
@@ -67,9 +76,9 @@ body {
   padding-left: 25px;
   padding-right: 25px;
   font-size: 15px;
-  font-family:Arial, sans-serif
+  font-family: Arial, sans-serif;
 }
-.skin{
+.skin {
   text-decoration: none;
   color: black;
 }
@@ -142,48 +151,48 @@ body {
   background-color: #828282;
   transition: 0.3s;
 }
-.mini-bottom{
+.mini-bottom {
   display: flex;
   border-bottom: 1px solid #999999;
   margin-top: 30px;
 }
-.mini-bottom div:nth-child(1){
+.mini-bottom div:nth-child(1) {
   border-top: 1px solid #999999;
   width: 30%;
   margin-left: 190px;
   margin-right: 80px;
 }
-.mini-bottom-second{
+.mini-bottom-second {
   border-top: 1px solid #999999;
 }
-.mini-bottom-third{
+.mini-bottom-third {
   border-top: 1px solid #999999;
 }
-.mini-bottom-fourth{
+.mini-bottom-fourth {
   border-top: 1px solid #999999;
 }
-.mini-bottom div{
+.mini-bottom div {
   margin-right: 50px;
 }
-.mini-bottom div div{
+.mini-bottom div div {
   display: flex;
   align-items: center;
   width: 60%;
   padding-right: 50px;
 }
-.mini-bottom div div:hover{
+.mini-bottom div div:hover {
   cursor: pointer;
   background-color: whitesmoke;
 }
-#footer-end{
+#footer-end {
   width: 80%;
-  margin-left:  -100px;
+  margin-left: -100px;
 }
-#footer{
+#footer {
   border-top: 1px solid #999999;
   margin-top: 10px;
 }
-.mini-bottom div div img{
+.mini-bottom div div img {
   width: 20px;
   height: 20px;
   margin-right: 5px;
@@ -191,43 +200,43 @@ body {
 
 /* drop down */
 
-#bottom div ul li{
+#bottom div ul li {
   position: relative;
   list-style: none;
   display: inline-block;
 }
-#bottom div ul li a{
+#bottom div ul li a {
   display: block;
   color: black;
   text-decoration: none;
 }
-#bottom div ul{
+#bottom div ul {
   position: absolute;
   display: none;
 }
-#bottom div :hover>ul {
+#bottom div :hover > ul {
   display: block;
 }
 
 /* bottom navbar */
-#bottom-navbar{
+#bottom-navbar {
   border-top: 1px solid #dbcdcd;
   display: flex;
   justify-content: center;
   background-color: #f2f2f2;
 }
-#bottom-navbar div{
+#bottom-navbar div {
   /* border: 1px solid; */
   margin-right: 60px;
   display: flex;
   align-items: center;
 }
-#bottom-navbar div:hover{
+#bottom-navbar div:hover {
   cursor: pointer;
   text-decoration: underline;
   color: rgb(52, 51, 51);
 }
-#bottom-navbar div img{
+#bottom-navbar div img {
   width: 20px;
   height: 20px;
   margin-right: 10px;
