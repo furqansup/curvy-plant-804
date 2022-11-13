@@ -143,25 +143,6 @@ body
   width: 100%;
 }
 
-/* "productBlock_link href": "https://www.dermstore.com/perricone-md-no-makeup-skincare-instant-blur-0.35-fl.-oz/12104284.html",
-"productBlock_image src": "https://static.thcdn.com/images/small/webp//productimg/1600/1600/12104284-1694786786012092.jpg",
-"productBlock_productName": "Perricone MD Instant Blur (0.35 oz.)",
-"visually-hidden": "4.5 Stars 8 Reviews",
-"productBlock_ratingStars href": "[object Object]",
-"productBlock_ratingValue": 4.5,
-"productBlock_reviewCount": 8,
-"productBlock_priceValue": "$55.00",
-"productQuickbuySimple": "Quick Buy",
-"visually-hidden 2": "Perricone MD Instant Blur (0.35 oz.)",
-"papBanner_text": "",
-"papPopup_text": "",
-"papPopup_link": "",
-"papPopup_link href": "",
-"productBlock_button": "",
-"productBlock_button href": "",
-"papFreeGift_image src": "",
-"papFreeGift_title": "",
-"papFreeGift_saving": "" */
 
 #bestseller
 {
@@ -263,4 +244,11 @@ body
 .brand_logo>img:hover
 {
   opacity: 1;
+}
+
+.arrivals
+{
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid black;
 }
