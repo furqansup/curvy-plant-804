@@ -36,6 +36,10 @@ body {
   .best-div {
     height: 30px;
   }
+  .cart-page{
+    text-decoration: none;
+    color: black;
+  }
   #f-account:hover{
     background-color: rgb(255, 246, 246);
     transition: 500ms;
