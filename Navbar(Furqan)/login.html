@@ -56,10 +56,15 @@
                 </div>
             </div>
         </div>
-        <div>
-            <h2>New Customers</h2>
-            <button onclick="register()" id="main_login_page_btn">REGISTER</button>
+
+        <!-- admin login and register section -->
+        <div class="admin_login">
+            <h2>Admin Login</h2>
+            <input type="text" placeholder="Enter your user id">
+            <input type="password" placeholder="Enter your password"><br>
+            <button onclick="admin_login()" id="admin_login_btn">Submit</button>
         </div>
+
     </div>
     <script>const passwordField = document.querySelector("#password");
         const eyeIcon = document.querySelector("#eye");

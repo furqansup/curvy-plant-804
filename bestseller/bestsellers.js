@@ -17,6 +17,9 @@ let getData = async() => {
 }
 getData(page);
 
+
+let  CartData=JSON.parse(localStorage.getItem("cart"))||[];
+
 //creating products
 let product = (el) => {
     let div = document.createElement("div");
@@ -28,7 +31,7 @@ let product = (el) => {
     let rev_count = document.createElement("span");
     let price = document.createElement("p");
     price.className = "priceClass";
-    let buy_link = document.createElement("p");
+    let buy_link = document.createElement("button");
     buy_link.className = "b_link";
 
     img.src = el.productBlock_image_src;
@@ -37,7 +40,9 @@ let product = (el) => {
     rev_count.innerText = `Reviews: ${+el.productBlock_reviewCount}`;
     price.innerText = `$${Number(el.productBlock_priceValue)}`;
     buy_link.innerText = "QUICK BUY";
-
+    buy_link.onclick=()=>{
+        addtocart(el);
+    }
     div.append(img,name,rating,rev_count,price,buy_link);
     return div;
     
@@ -201,4 +206,12 @@ let prev = () => {
 let next = () => {
     page++;
     getData();
+}
+
+
+//add to cart functionality
+function addtocart(el){
+    alert("Item is added to cart");
+    CartData.push(el);
+    localStorage.setItem("cart",JSON.stringify(CartData))
 }
