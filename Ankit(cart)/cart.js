@@ -4,7 +4,7 @@ document.getElementById("_header").innerHTML = Navbar();
 document.getElementById("footer").innerHTML = Footer();
 
 let dataArr = JSON.parse(localStorage.getItem("cart")) || [];
-document.getElementById("cart-length").innerText = dataArr.length;
+// document.getElementById("cart-length").innerText = dataArr.length;
 console.log(dataArr);
 let appendData = (dataArr) => {
       document.getElementById("cart-show").innerHTML = null;
@@ -166,7 +166,7 @@ let appendData = (dataArr) => {
 
 let decreFunc = (el, idx, count, pr) => {
       count--;
-      pr = pr - Number(el.price);
+      pr = pr - Number(el.productBlock_priceValue);
       console.log(typeof pr, pr);
       if (count == 0) {
             dataArr.splice(idx, 1);
