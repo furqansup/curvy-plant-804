@@ -65,4 +65,4 @@ let Navbar=()=>{
     
 }
 
-export {Navbar}
+export {Navbar};
