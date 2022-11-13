@@ -5,77 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>admin page</title>
-    <style>
-        * {
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-        }
-        .main {
-            text-align: center;
-            align-items: center;
-            border: 7px solid grey;
-            border-radius: 15px;
-            padding : 2rem;
-            background-color: rgb(246, 204, 153);
-        }
-        .main input {
-            font-size: 1.5rem;
-        }
-        .main button {
-            font-size: 1.2rem;
-            align-items: center;
-            padding: .2rem;
-        }
-        /* product display section */
-        .product_display {
-            margin: 2rem 0;
-        }
-        .product_display .product_display_table {
-            width: 100%;
-            text-align: center;
-        }
-        .product_display .product_display_table thead {
-            background-color: rgb(231, 229, 229);
-        }
-        .product_display .product_display_table td {
-            padding: 1rem;
-            font-size: 1.5rem;
-            border-bottom: 5px;
-        }
-
-    </style>
+    <link rel="stylesheet" href="./admin.css">
+    
 </head>
 <body>
     <div class="main">
         <h1>Admin dashboard</h1>
+        <button id="logout_button"><a href="">Log out</a></button>
         <div id="prod_info">
             <input type="text" placeholder="Enter product name" id="p_name">
-            <input type="text" placeholder="Enter product price" id="p_price">
-            <input type="text" placeholder="Enter img url" id="p_image">
+            <input type="number" placeholder="Enter product price" id="p_price">
+            <input type="text" placeholder="Enter img url" id="p_img">
             <button onclick="addProduct()">Add Product</button>
         </div>
     </div>
 
-    <br>
-    <hr>
     
-
-    <div class="product_display">
-        <table class="product_display_table">
-
-            <thead>
-                <tr>
-                    <td>Product image</td>
-                    <td>Product name</td>
-                    <td>Product price</td>
-                    <td>Actions</td>
-                </tr>
-            </thead>
-
-        </table>
+    <div class="button_div">
+        <button onclick="prev()">Previous</button>
+        <button onclick="next()">Next</button>
     </div>
+    <br>
+
+   
+    <div id="product_display"></div>
+    <hr>
+
+    <div class="button_div">
+        <button onclick="prev()">Previous</button>
+        <button onclick="next()">Next</button>
+    </div>
+
     
+
     <script src="./admin.js"></script>
 </body>
 </html>
