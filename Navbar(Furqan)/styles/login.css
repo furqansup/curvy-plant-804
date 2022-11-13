@@ -91,7 +91,7 @@ body{
 .logoflex>div{
     display: flex;
     width: 49%;
-    height: 40pxpx;
+    height: 40px;
     margin: auto;
     cursor: pointer;
     border: 1px solid grey;
@@ -142,4 +142,20 @@ body{
     height: 39px;
     margin-left: 17px;
     margin-bottom: 40px;
+  }
+
+  /* admin login part begins */
+  .admin_login {
+   border: 1px solid red;
+    height:250px;
+    text-align: center;
+  }
+  .admin_login button {
+    margin: 1.5rem;
+    padding: .2rem;
+    font-size: 1.1rem;
+  }
+  .admin_login button:hover {
+    background-color: green;
+    border-color: #FFFFFF;
   }
