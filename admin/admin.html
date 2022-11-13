@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>admin page</title>
+    <link rel="stylesheet" href="./admin.css">
+    
+</head>
+<body>
+    <div class="main">
+        <h1>Admin dashboard</h1>
+        <button id="logout_button"><a href="./../index.html">Log out</a></button>
+        <div id="prod_info">
+            <input type="text" placeholder="Enter product name" id="p_name">
+            <input type="number" placeholder="Enter product price" id="p_price">
+            <input type="text" placeholder="Enter img url" id="p_img">
+            <button onclick="addProduct()">Add Product</button>
+        </div>
+    </div>
+
+    
+    <div class="button_div">
+        <button onclick="prev()">Previous</button>
+        <button onclick="next()">Next</button>
+    </div>
+    <br>
+
+   
+    <div id="product_display"></div>
+    <hr>
+
+    <div class="button_div">
+        <button onclick="prev()">Previous</button>
+        <button onclick="next()">Next</button>
+    </div>
+
+    
+
+    <script src="./admin.js"></script>
+</body>
+</html>

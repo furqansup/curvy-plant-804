@@ -1,10 +1,11 @@
-import { vikasHead, footer } from "../components/header.js";
-document.getElementById("_header").innerHTML = vikasHead();
-document.getElementById("footer").innerHTML = footer();
+import { Navbar } from "../Navbar(Furqan)/components/Navbar.js";
+import { Footer } from "../Navbar(Furqan)/components/Footer.js";
+document.getElementById("_header").innerHTML = Navbar();
+document.getElementById("footer").innerHTML = Footer();
 
 let dataArr = JSON.parse(localStorage.getItem("cart")) || [];
-document.getElementById("cart-length").innerText = dataArr.length;
-// console.log(dataArr);
+// document.getElementById("cart-length").innerText = dataArr.length;
+console.log(dataArr);
 let appendData = (dataArr) => {
       document.getElementById("cart-show").innerHTML = null;
       let totalCostOfAllProducts = 0;
@@ -20,13 +21,13 @@ let appendData = (dataArr) => {
             cartBox.style.display = "flex";
 
             let image = document.createElement("img");
-            image.src = el.producturl;
+            image.src = el.productBlock_image_src;
             image.style.height = "150px";
             image.style.width = "150px";
             image.style.marginRight = "10px";
 
             let title = document.createElement("p");
-            title.innerText = el.productname;
+            title.innerText = el.productBlock_productName;
             // title.style.border="1px solid red"
 
             let fevi = document.createElement("p");
@@ -50,7 +51,7 @@ let appendData = (dataArr) => {
             titleDiv.append(title, avl, fevi);
 
             let price = document.createElement("p");
-            price.innerText = el.price;
+            price.innerText = el.productBlock_priceValue;
             price.style.width = "14%";
             price.style.border = "1px solid white";
             price.style.alignItems = "center";
@@ -86,7 +87,7 @@ let appendData = (dataArr) => {
                   counting.innerText = arrTo[0];
                   totalPrice.innerText = arrTo[1];
                   totalCostOfAllProducts =
-                        totalCostOfAllProducts - Number(el.price);
+                        totalCostOfAllProducts - Number(el.productBlock_priceValue);
                   // console.log(totalCostOfAllProducts);
                   document.querySelector(
                         ".total"
@@ -104,7 +105,7 @@ let appendData = (dataArr) => {
                   counting.innerText = incArr[0];
                   totalPrice.innerText = incArr[1];
                   totalCostOfAllProducts =
-                        totalCostOfAllProducts + Number(el.price);
+                        totalCostOfAllProducts + Number(el.productBlock_priceValue);
                   document.querySelector(
                         ".total"
                   ).innerText = `$${totalCostOfAllProducts}`;
@@ -113,7 +114,7 @@ let appendData = (dataArr) => {
             qty.append(decButton, counting, incButton);
 
             let totalPrice = document.createElement("p");
-            totalPrice.innerText = el.price;
+            totalPrice.innerText = el.productBlock_priceValue;
             totalPrice.style.width = "14%";
             totalPrice.style.border = "1px solid white";
             totalPrice.style.alignItems = "center";
@@ -165,7 +166,7 @@ let appendData = (dataArr) => {
 
 let decreFunc = (el, idx, count, pr) => {
       count--;
-      pr = pr - Number(el.price);
+      pr = pr - Number(el.productBlock_priceValue);
       console.log(typeof pr, pr);
       if (count == 0) {
             dataArr.splice(idx, 1);
@@ -177,7 +178,7 @@ let decreFunc = (el, idx, count, pr) => {
 
 let increFunc = (el, idx, count, pr) => {
       count++;
-      pr = pr + Number(el.price);
+      pr = pr + Number(el.productBlock_priceValue);
       // console.log(pr);
       return [count, pr];
 };

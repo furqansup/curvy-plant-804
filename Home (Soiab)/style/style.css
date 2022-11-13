@@ -1,0 +1,266 @@
+body
+{
+  background-color: white;
+}
+#section-first
+{
+    width: 100%;
+    height: 500px;
+    /* border: 2px solid red; */
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+  .slider-image
+  {
+    width:fit-content;
+    overflow: hidden;
+    margin: auto;
+    /* border: 1px solid greenyellow; */
+  }
+.centered
+{
+  position: absolute;
+  /* border: 1px solid red; */
+  text-align: left;
+  width: 490px;
+  right: 80px;
+}
+.h1
+{
+ font-size: 40px;
+ color: white;
+}
+.p
+{
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+}
+.button
+{
+  border: none;
+  background-color: black;
+  padding: 12px 20px 12px 20px;
+  margin: 5px 10px 5px 10px;
+  font-size: 14px;
+  color: white;
+  cursor: pointer;
+}
+
+.button:hover
+{
+  opacity: 0.7;
+}
+#mid_section
+{
+  /* border: 1px solid tomato; */
+  text-align: center;
+}
+#section_second
+{
+  display: flex;
+  width: 98%;
+  /* margin: auto; */
+  gap: 20px;
+}
+.section_second_div_first
+{
+  width: 45%;
+  height: 500px;
+  margin: auto;
+  /* border: 1px solid yellowgreen; */
+}
+.section_second_div_first>img
+{
+  width: 100%;
+  height: 100%;
+}
+.section_second_div_second
+{
+  width: 45%;
+  height: auto;
+  /* margin: auto; */
+  /* border: 1px solid yellowgreen; */
+}
+.glider
+{
+  display: flex;
+  /* border: 1px solid red; */
+  gap: 20px;
+}
+.mid_cards
+{
+  height: 100%;
+  gap: 40px
+}
+.mid_cards>div
+{
+  /* border: 1px solid gold; */
+}
+#category
+{
+  /* border: 2px solid red; */
+  /* display: flex; */
+  margin: auto;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  width: 95%;
+
+}
+.inner_category
+{
+  display: flex;
+  /* margin: auto; */
+}
+.category_box
+{
+  width: 15%;
+  margin: auto;
+  text-align: center;
+}
+.category_box>img
+{
+  width: 100%;
+  opacity: 0.8;
+}
+.category_box>img:hover
+{
+  opacity:1 ;
+}
+#baner
+{
+  width: 90%;
+  /* border: 2px solid tomato; */
+  margin: auto;
+}
+#baner>img
+{
+  width: 100%;
+}
+
+/* "productBlock_link href": "https://www.dermstore.com/perricone-md-no-makeup-skincare-instant-blur-0.35-fl.-oz/12104284.html",
+"productBlock_image src": "https://static.thcdn.com/images/small/webp//productimg/1600/1600/12104284-1694786786012092.jpg",
+"productBlock_productName": "Perricone MD Instant Blur (0.35 oz.)",
+"visually-hidden": "4.5 Stars 8 Reviews",
+"productBlock_ratingStars href": "[object Object]",
+"productBlock_ratingValue": 4.5,
+"productBlock_reviewCount": 8,
+"productBlock_priceValue": "$55.00",
+"productQuickbuySimple": "Quick Buy",
+"visually-hidden 2": "Perricone MD Instant Blur (0.35 oz.)",
+"papBanner_text": "",
+"papPopup_text": "",
+"papPopup_link": "",
+"papPopup_link href": "",
+"productBlock_button": "",
+"productBlock_button href": "",
+"papFreeGift_image src": "",
+"papFreeGift_title": "",
+"papFreeGift_saving": "" */
+
+#bestseller
+{
+  width: 100%;
+  text-align: center;
+}
+#bestseller_inner
+{
+  display: flex;
+}
+.bestseller_card
+{
+  gap: 20px;
+}
+.bestseller_card div
+{
+  width: 30%
+}
+.bestseller_card div img
+{
+ width:300px;
+}
+.bestseller_card div p
+{
+  font-size: 16px;
+}
+.bestseller_card div button
+{
+  width: 100%;
+  border: none;
+  font-size: 20px;
+  background-color: black;
+  color: white;
+  margin: 5px 10px 5px 10px;
+  padding: 7px 15px 7px 15px;
+}
+.bestseller_card div button:hover
+{
+  opacity: 0.8;
+}
+#black_friday
+{
+  margin: auto;
+  text-align: center;
+  margin-top: 40px;
+  width: 90%;
+  margin-bottom: 40px;
+}
+#black_friday_card
+{
+  display: flex;
+  margin: auto;
+  text-align: center;
+}
+.friday_cards
+{
+  width: 32%;
+  margin: auto;
+}
+.friday_cards>img
+{
+  width: 100%;
+}
+.friday_cards>button
+{
+  background: none;
+  padding: 8px 20px 8px 20px;
+  font-size: 16px;
+}
+.friday_cards>button:hover
+{
+  background-color: rgb(228, 220, 220);
+}
+#brand
+{
+  width: 90%;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+#brand_inner
+{
+  display: flex;
+  margin: auto;
+  /* border: 1px solid rebeccapurple; */
+  margin-top: 40px;
+}
+.brand_logo
+{
+  width: 15%;
+  margin: auto;
+}
+.brand_logo>img
+{
+  width: 100%;
+  opacity: 0.5;
+}
+.brand_logo>img:hover
+{
+  opacity: 1;
+}

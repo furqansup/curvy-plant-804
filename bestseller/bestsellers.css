@@ -1,0 +1,76 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.left {
+    float: left;
+    width: 18vw;
+    height: auto;
+    border-right: 2px solid grey;
+    
+}
+
+.right {
+    float: right;
+    max-width: 80vw;
+}
+
+.price_filter_div {
+    font-size: 1.5rem;
+    padding: 1.2rem;
+}
+
+.revu_filter_div {
+    font-size: 1.5rem;
+    padding: 1.2rem;
+}
+
+input[type = checkbox] {
+    width: 20px;
+    height: 20px;
+    margin: .5rem;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows:  repeat(1,1fr);
+    gap: 0;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.prod_div img {
+    width: 100%;
+    height: auto;
+}
+.prod_div {
+    width: 90%;
+    height: auto;
+    text-align: center;
+    padding: .5rem;
+    margin: .5rem;
+}
+.priceClass {
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+.b_link {
+    width: 100%;
+    height: 10%;
+    background-color: black;
+    color: white;
+    align-items: center;
+}
+
+.buttons_right {
+    float: right;
+    margin-bottom: 0;
+}
+.buttons_right button {
+    font-size: 1.1rem;
+    padding: .2rem 1rem;
+    margin: .5rem;
+}

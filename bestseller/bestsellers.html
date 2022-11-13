@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dermicare</title>
+    <link rel="stylesheet" href="./bestsellers.css">
+</head>
+<body>
+    <!-- navbar -->
+    <div id="navbar"></div>
+
+    <!-- left part -->
+    <div class="left">
+        
+        <!-- price filter -->
+        <div class="price_filter_div">
+            <h3>Price</h3>
+            <hr>
+            <input type="checkbox" id="pRange1" name="" value="" onclick="priceFilter()">
+            <label for="price1">Less than $10</label><br>
+            <input type="checkbox" id="pRange2" name="" value="" onclick="priceFilter()">
+            <label for="price2">$10-$25</label><br>
+            <input type="checkbox" id="pRange3" name="" value="" onclick="priceFilter()">
+            <label for="price3">$25-$50</label><br>
+            <input type="checkbox" id="pRange4" name="" value="" onclick="priceFilter()">
+            <label for="price4">$50-$100</label><br>
+            <input type="checkbox" id="pRange5" name="" value="" onclick="priceFilter()">
+            <label for="price5">More than $100</label>
+        </div>
+
+        <!-- review filter -->
+        <div class="revu_filter_div">
+            <h3>Reviews</h3>
+            <hr>
+            <input type="checkbox" id="revu1" name="" value="" onclick="reviewFilter()">
+            <label for="revu1">1-3</label><br>
+            <input type="checkbox" id="revu2" name="" value="" onclick="reviewFilter()">
+            <label for="rev2">3-4</label><br>
+            <input type="checkbox" id="revu3" name="" value="" onclick="reviewFilter()">
+            <label for="revu3">5</label>
+        </div>
+
+    </div>
+    <hr>
+    <!-- right part -->
+    <div class="right">
+        <div>
+            <h1>Dermstore Bestsellers</h1>
+            <br>
+            <p id="tot_prod"></p>
+            <div class="buttons_right">
+                <button onclick="prev()">Previous</button>
+                <button onclick="next()">Next</button>
+            </div>
+            <br>
+            <h3>Sort by
+                <select name="" id="sort" onchange="sort()">
+                    <option value="default">default</option>
+                    <option value="low">Price: Low to high</option>
+                    <option value="high">Price: High to low</option>
+                    <option value="bestsellers">Bestsellers</option>
+                    <option value="letter">A-Z</option>
+                </select>
+            </h3>
+
+                
+                
+            
+        </div>
+        
+        <div id="container"></div>
+        <p>The beauty, skin & hair products you're unapologetically obsessed with. And we understand. From skin care as an expression of self-care, to hair care revolve self-confidence around, shop our tried and tested products that are loved by thousands delivered straight to your door.</p>
+    </div>
+
+    <!-- footer -->
+    <div id="footer"></div>
+    <script src="./bestsellers.js" type="module"></script>
+</body>
+</html>
