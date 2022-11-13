@@ -14,10 +14,11 @@ let Navbar=()=>{
     <img src="https://cdn-icons-png.flaticon.com/512/747/747376.png" alt="">
     <p>Account</p>
 </div></a>
-        <div id="f-cart">
-            <img src="https://cdn-icons-png.flaticon.com/512/4903/4903482.png" alt="">
-            <p>Cart</p>
-        </div>
+<a class="cart-page" href="/curvy-plant-804/Ankit(cart)/cart.html">
+<div id="f-cart">
+<img src="https://cdn-icons-png.flaticon.com/512/4903/4903482.png" alt="">
+<p>Cart</p>
+</div></a>
     </div>
   </div>
   <div id="bottom">

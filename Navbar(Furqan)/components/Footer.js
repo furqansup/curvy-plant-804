@@ -99,7 +99,7 @@ let Footer=()=>{
     </div>
   </div>
   <div id="footer-end">
-    <img src="png/Screenshot (211).png" alt="">
+    <img src="/curvy-plant-804/Navbar(Furqan)/png/Screenshot (211).png" alt="">
   </div>`
 }
 

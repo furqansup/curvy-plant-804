@@ -5,6 +5,7 @@ body {
 #navbar {
   border-bottom: 1px solid #cccccc;
   overflow: hidden;
+  position: sticky;
 }
 #top {
   margin: auto;
@@ -35,6 +36,10 @@ body {
 }
 .best-div {
   height: 30px;
+}
+.cart-page{
+  text-decoration: none;
+  color: black;
 }
 #f-account:hover {
   background-color: rgb(255, 246, 246);
