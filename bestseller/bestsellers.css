@@ -6,15 +6,32 @@
 
 .left {
     float: left;
-    max-width: 25vw;
+    width: 18vw;
     height: auto;
-    border: 1px solid black;
+    border-right: 2px solid grey;
+    
 }
 
 .right {
     float: right;
-    max-width: 74vw;
-    border: 1px solid black;
+    max-width: 80vw;
+    
+}
+
+.price_filter_div {
+    font-size: 1.5rem;
+    padding: 1.2rem;
+}
+
+.revu_filter_div {
+    font-size: 1.5rem;
+    padding: 1.2rem;
+}
+
+input[type = checkbox] {
+    width: 20px;
+    height: 20px;
+    margin: .5rem;
 }
 
 #container {
@@ -22,6 +39,8 @@
     grid-template-columns: repeat(3,1fr);
     grid-template-rows:  repeat(1,1fr);
     gap: 0;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 .prod_div img {
@@ -45,4 +64,14 @@
     background-color: black;
     color: white;
     align-items: center;
+}
+
+.buttons_right {
+    float: right;
+    margin-bottom: 0;
+}
+.buttons_right button {
+    font-size: 1.1rem;
+    padding: .2rem 1rem;
+    margin: .5rem;
 }

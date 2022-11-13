@@ -18,6 +18,9 @@ function signIn(){
         }
     }
 }
+function register(){
+    window.location.href="signup.html"
+}
 
 
 
