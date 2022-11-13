@@ -60,9 +60,10 @@
         <!-- admin login and register section -->
         <div class="admin_login">
             <h2>Admin Login</h2>
-            <input type="text" placeholder="Enter your user id">
-            <input type="password" placeholder="Enter your password"><br>
-            <button onclick="admin_login()" id="admin_login_btn">Submit</button>
+            <input type="text" placeholder="Enter your user id" id="admin_id" required>
+            <input type="password" placeholder="Enter your password" id="admin_passd" required><br>
+            <button onclick="login_admin()" id="admin_login_btn">Submit</button>
+            <button onclick="register_admin()" id="admin_register_btn">Register</button>
         </div>
 
     </div>
@@ -77,4 +78,5 @@
 
 </body>
 <script src="src/login.js"></script>
+
 </html>
