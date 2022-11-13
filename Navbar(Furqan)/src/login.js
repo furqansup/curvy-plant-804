@@ -15,7 +15,7 @@ function signIn(){
     for(let i=0;i<store_data.length;i++){
         if(email==store_data[i].useremail && pass==store_data[i].userpass){
             alert("login successfull")
-            window.location.href="index.html"
+            window.location.href="/curvy-plant-804/index.html"
         } else{
             
         }
