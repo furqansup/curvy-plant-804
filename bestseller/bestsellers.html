@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./bestsellers.css">
 </head>
 <body>
+    <!-- navbar -->
+    <div id="navbar"></div>
 
     <!-- left part -->
     <div class="left">
@@ -46,11 +48,13 @@
     <div class="right">
         <div>
             <h1>Dermstore Bestsellers</h1>
+            <br>
             <p id="tot_prod"></p>
             <div class="buttons_right">
                 <button onclick="prev()">Previous</button>
                 <button onclick="next()">Next</button>
             </div>
+            <br>
             <h3>Sort by
                 <select name="" id="sort" onchange="sort()">
                     <option value="default">default</option>
@@ -70,6 +74,8 @@
         <p>The beauty, skin & hair products you're unapologetically obsessed with. And we understand. From skin care as an expression of self-care, to hair care revolve self-confidence around, shop our tried and tested products that are loved by thousands delivered straight to your door.</p>
     </div>
 
-    <script src="./bestsellers.js"></script>
+    <!-- footer -->
+    <div id="footer"></div>
+    <script src="./bestsellers.js" type="module"></script>
 </body>
 </html>

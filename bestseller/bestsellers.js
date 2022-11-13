@@ -2,6 +2,12 @@ const server_url = "http://localhost:8040/api/data";
 let page = 1;
 let t_data;
 
+// //importing navbar
+// import {Navbar} from "../../Navbar(Furqan)/components/Navbar";
+// let navbar = document.getElementById("navbar");
+// navbar.innerHTML = Navbar();
+
+
 let getData = async() => {
     try{
         t_data = await fetch(server_url);
@@ -68,20 +74,21 @@ let sort = async() => {
    
     let data = await fetch(server_url);
     data = await data.json();
-    let newData = data.data;
+    console.log(data);
+    
 
     if (val == "default") { renderData(newData) };
 
     if (val == "low") {
-        newData.sort( (a,b) => a.productBlock_priceValue-b.productBlock_priceValue);
+        data.sort( (a,b) => a.productBlock_priceValue-b.productBlock_priceValue);
         renderData(newData);
     }
     if (val == "high") {
-        newData.sort( (a,b) => b.productBlock_priceValue-a.productBlock_priceValue);
+        data.sort( (a,b) => b.productBlock_priceValue-a.productBlock_priceValue);
         renderData(newData);
     }
     if (val == "letter") {
-        newData.sort( (a,b) =>  {(a.productBlock_productName.toLowerCase() > b.productBlock_productName.toLowerCase())
+        data.sort( (a,b) =>  {(a.productBlock_productName.toLowerCase() > b.productBlock_productName.toLowerCase())
             return -1;
         });
        
