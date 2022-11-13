@@ -3,9 +3,14 @@ let page = 1;
 let t_data;
 
 // //importing navbar
-// import {Navbar} from "../../Navbar(Furqan)/components/Navbar";
-// let navbar = document.getElementById("navbar");
-// navbar.innerHTML = Navbar();
+import {Navbar} from "../../Navbar(Furqan)/components/Navbar.js";
+let navbar = document.getElementById("navbar");
+navbar.innerHTML = Navbar();
+
+//import footer
+import {Footer} from "../../Navbar(Furqan)/components/Footer.js";
+let footer = document.getElementById("footer");
+footer.innerHTML = Footer();
 
 
 let getData = async() => {
