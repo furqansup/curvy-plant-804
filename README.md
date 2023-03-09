@@ -2,7 +2,7 @@ Construct-Week-Project-Unit-3(Async)
 
 DermStore website
 
-Its an Collaborative Project on "https://stately-rabanadas-370a97.netlify.app/" under Construct Week of UNIT - 3(Async) in MASAI Full-Stack Web Development Course.
+Its an Collaborative Project on "https://stately-rabanadas-370a97.netlify.app/" under Construct Week of UNIT - 3 in MASAI Full-Stack Web Development Course.
 
 #Built mostly 6 pages :-
 
